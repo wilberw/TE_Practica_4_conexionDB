@@ -1,0 +1,12 @@
+CREATE DATABASE bd_proyectos; 
+USE bd_proyectos; 
+CREATE TABLE tareas( 	
+            id int(11) unsigned auto_increment not null primary key, 	
+            tarea varchar(50), 	
+            prioridad int(11), 	
+            completado int(11) 
+);
+
+INSERT INTO tareas(tarea,prioridad,completado) values("Sistema de Informacion Geografico",2,2); 
+INSERT INTO tareas(tarea,prioridad,completado) values("Redes II",3,2); 
+SELECT *FROM tareas;
